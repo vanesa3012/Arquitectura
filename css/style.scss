@@ -139,15 +139,12 @@ span:nth-child(8) {
     text-align: center;  
 }
 
-#botonSubir{
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: red;
-    border-radius: 50%;
+.fa-chevron-up{
+    color: rgb(211, 202, 209);
+    font-size: 2rem;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 5%;
+    right: 3%;
 }
 
 /*Footer*/
@@ -163,6 +160,7 @@ footer{
 }
 
 .redes-sociales{
+    display: flex;
     display: inline-block;
     justify-content: space-between;
 }
@@ -184,19 +182,15 @@ footer{
     width: 100%;
     height: 100%;
     display: flex;
-    display: inline-block;
+    align-items: center;
+    flex-direction: column;
 }
 
-.container-logo img{
+.logo{
     width: 7rem;
     height: 7rem;
-    margin-left: 40rem;
 }
 
-
-.copy{
-    text-align: center;
-}
 /* CONTACTO*/
 
 .line{
@@ -204,75 +198,97 @@ footer{
     border-color: #f181d9;
 }
 
-.padre{
-    width: 80%;
-    margin: 2rem auto;
-    display: flex;
-    justify-content:space-between;
+.container-contacto{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
 }
 
-.contacto{
+.contactUs{
     text-align: center;
-    font-size: 1.25rem;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 30px;
+    font-size: 3rem;
 }
 
-/*Formulario*/
-
-form{
-    margin-top: 40px;
-    margin-left: 80px;
-    border: 5px double rgba(248, 60, 223, 0.8);
-    border-radius: 2%;
-    width: 380px;
-    height: 500px;
+.contenedor-gral{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
-form input{
-    margin-top: 20px;
-    margin-left: 40px;
-    background-color: rgb(224, 216, 216);
-    width: 300px;
-    height: 35px;
-    border: #a34981;
+.contenedor-gral > *{
+    padding: 1rem;
 }
 
-textarea{
-    margin-left: 40px;
-    background-color: rgb(224, 216, 216);  
+.contenedor-form{
+    background-color: #222222;
 }
 
-/* iframe*/
+.contenedor-map{
+    background-color: #000;
+}
 
-.estudio{
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;
+.contenedor-map ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor-map ul li{
+    padding: .3rem;
+}
+
+.contenedor-form form{
+    margin: 0;
+    padding: 1rem;
+}
+
+.contenedor-form form input,
+.contenedor-form .botonEnviar,
+.contenedor-form textarea{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #4c094e;
+    color: white;
+}
+
+.contenedor-form .botonEnviar{
+    background-color: 
+    #4c094e;
+    border: none;
+    padding: 1rem;
+}
+
+.contenedor-form .botonEnviar:hover,
+.contenedor-form .botonEnviar:focus{
+    background: #a51f93;
+    color: #4c094e;
+    transition: background-color 1s ease-out;
+    outline: none;
+    font-weight: 900;
+}
+
+.contenedor-map h4,
+.contenedor-map h6,
+.contenedor-map ul,
+.contenedor-map p{
     text-align: center;
+    margin: 0 0 1rem 0;
 }
 
-.here{
-    margin-left: 60px;
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 50px;
+@media(min-width: 768px) {
+    .container-contacto{
+        padding: 0 4rem;
+        margin-bottom: 1rem;
+    }
+    .contenedor-gral {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 }
+    
 
-.mapa{
-    border: 5px double rgba(248, 60, 223, 0.8);
-    border-radius: 2%;
-    width: 450px;
-    height: 350px;
-    margin-right: 90px;
-
-}
-
-iframe{
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
 /*NOSOTROS*/
 
@@ -382,27 +398,23 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 }
 
 .container-gral{
-    width: 100%;
+    width: 70%;
     margin: auto;
-    justify-content: center;
-    .text-inicio{
-        width: 75%;
-        text-align:justify;
-        margin: auto;
-    }
+    padding: 20px;
     .sub-text{
-        margin-left: 11rem;
-        padding: 6px;
-        font-weight: 800;
-        font-size: 1.5rem;
+        margin-left: 5%;
     }
-}
-
-.video{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    .text-inicio{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    .video{
+        display: block;
+        margin: auto;
+        width: 90%;
+        margin-top: 20px;
+    }
 }
 
 .card-title .card-text{
@@ -429,34 +441,34 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     font-family: 'Libre Bodoni', serif;
 }
 
-.first h2{
-    margin-left: 30px;
+.first{
+    width: 100%;
+    padding: 10px;
+    h2{
+        margin-left: 30px;
+    }
 }
+
 .container-casas{
     background-color: $colorDeco;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 1000px;
+    height: 900px;
     width: 100%;
-    gap: 20px;
-    padding: 10px;
     padding-bottom: 10px;
-}
-.container-casas .do{
-    border-radius: 10px;
-    transition: transform .5s linear;
-}
-
-.container-casas .do:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 5px 5px rgb(56, 6, 58);
+    .do{
+        margin: 10px;
+    }
 }
 
-.container-deco .do:hover{
-    transform: scale(1.05);
-    box-shadow: 5px 5px 5px rgb(56, 6, 58);
+.container-deco{
+    @extend .container-casas;
+    .do{
+        margin: 10px;
+        border-radius: 10px;
+        transition: transform .5s linear;
+    }
 }
+
 .casa1{
     background-image: url(../img/casa14.jpg);
     grid-column: 1/3;
@@ -530,18 +542,6 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     height: 30%;
     width: 50%;
 }
-.last{
-    padding: 10px;
-}
-
-.container-deco{
-    @extend .container-casas;
-    padding: 10px;
-    .do{
-        border-radius: 10px;
-        transition: transform .5s linear;
-    }
-}
 
 .deco1{
     @extend .casa1;
@@ -561,7 +561,6 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     @extend .casa1;
     background-image: url(../img/EZ-remove.png);
     background-color: $colorDeco;
-    min-width:300px;
     grid-column: 1/2;
     grid-row: 3/5;
 }
@@ -691,12 +690,146 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     grid-row: 4/6;
 }
 
+.container-casas .do{
+    border-radius: 10px;
+    transition: transform .5s linear;
+}
+
+.container-casas .do:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(56, 6, 58);
+}
+
+.container-deco .do:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(56, 6, 58);
+}
+
+.last{
+    padding: 10px;
+}
+
+@media screen and (max-width: 1020px){
+    .container-casas,
+    .container-deco{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .casa3{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 200px;
+    }
+    .casa5{
+        grid-column: 1/2;
+        grid-row: 6/8;
+    }
+
+    .casa6{
+        grid-column: 2/3;
+        grid-row: 6/8;
+        height: 250px;
+    }
+
+    .casa8{
+        grid-column: 3/4;
+        grid-row: 3/6;
+    }
+
+    .casa9{
+        grid-column: 3/4;
+        grid-row: 6/8;
+    }
+
+    .deco1{
+        grid-column: 1/2;
+        grid-row: 6/8;
+    }
+
+    .deco3{
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    .deco4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .deco5{
+        grid-column: 2/3;
+        grid-row: 3/6;
+    }
+
+    .deco6{
+        grid-column: 3/4;
+        grid-row: 3/5;
+    }
+
+    .deco7{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    .deco8{
+        grid-column: 2/3;
+        grid-row: 6/8;
+    }
+
+    .deco9{
+        grid-column: 3/4;
+        grid-row: 5/8;
+    }
+
+    .ext4{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    .ext7{
+        grid-column: 3/4;
+        grid-row: 6/8;
+    }
+
+    .ext8{
+        grid-column: 2/3;
+        grid-row: 6/8;
+    }
+
+    .ext11{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-casas{
+        display: flex;
+        width: 95%;
+        height:fit-content;
+        flex-wrap: wrap;
+        gap: 10px;
+        .do{
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+    .container-gral{
+        width: 95%;
+    }
+}
+
+
 /*DECORACIÓN*/
+
+#main-deco{
+    width: 100%;
+}
 
 .container-foto{
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: fit-content;
     display: inline-block;
     h1{
         margin-top: 2rem;
@@ -717,15 +850,16 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
         margin: auto;
         margin-bottom: 2rem;
     }    
+
+    .foto-deco{
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
 }
 
-.foto-deco{
-    width: 60%;
-    margin-left: 17rem;
-}
-
-.card-body{
-    background-color: $colorDeco;
+.card .bg-transparent{
+    border: none;
 }
 
 .card-chica{

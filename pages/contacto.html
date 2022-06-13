@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudio de arquitectura y decoración">
+    <meta name="keywords" content="Estudio de arquitectura, decoración, diseño, arquitecto, renovación, proyectos, construcción, interior, exterior, operarios, obras, profesionales, planos, renders.">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6a847c4bea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="shortcut icon" href="../img/CopiaEZ.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
@@ -46,27 +50,35 @@
           </nav>
     </header>
 
-    <main class=""> 
-        <div class="padre">
-            <div>
-                <h3 class="contacto">Nuestro contacto</h3>
-                <form action="enviar.php" method="get" type="text">           
-                    <input type="text" placeholder="Nombre y apellido"> <br>
-                    <input type="number" placeholder="Teléfono"> <br>
-                    <input type="mail" placeholder="Email"> <br> <br>
-                    <textarea name="" id="" cols="30" rows="8" placeholder="Mensaje"></textarea>
-                    <input type="submit">
-                </form>    
-            </div>
-
-            <div>
-                <h3 class="estudio">Nuestro estudio</h3>
-                <h5 class="here" >Estamos aquí:</h5>
-                <div class="mapa">
-                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.8870484730683!2d-64.23968088530816!3d-31.362096000765135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329935cee3fe87%3A0x3c5f2bda71a5c015!2sAvenida%20Doctor%20Rafael%20Nu%C3%B1ez%20%26%20Pasaje%20Candonga%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1648394985127!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+    <main> 
+      <div class="container-contacto">
+        <h1 class="contactUs">Nuestro contacto</h1>
+        <div class="contenedor-gral">
+          <div class="contenedor-form">
+            <h3>Contáctanos</h3>
+            <form action="enviar.php" method="get" type="text">           
+              <input type="text" placeholder="Nombre y apellido"> <br>
+              <input type="number" placeholder="Teléfono"> <br>
+              <input type="mail" placeholder="Email"> <br> <br>
+              <textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea> <br>
+              <input type="submit" class="botonEnviar">
+            </form>   
+          </div>
+          <div class="contenedor-map">
+            <h4>Más Info</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Av. Rafael Núñez esq. Copacabana</li>
+              <li><i class="fa-solid fa-phone"></i> 351-49495825</li>
+              <li><i class="fa-solid fa-envelope-open-text"></i> estudioezarquitectura@gmail.com</li>
+            </ul>
+            <h6>Estamos aquí:</h6>
+            <p><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.8870484730683!2d-64.23968088530816!3d-31.362096000765135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329935cee3fe87%3A0x3c5f2bda71a5c015!2sAvenida%20Doctor%20Rafael%20Nu%C3%B1ez%20%26%20Pasaje%20Candonga%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1648394985127!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+            
+          </div>
         </div>
+      </div>        
+
     </main>
     
     <footer>
@@ -81,14 +93,10 @@
       </div>
 
       <div class="container-logo">
-        <img src="../img/EZ-remove.png" alt="" class="logo">
-      </div>
-        
-      
-
-      <div class="copy">
+        <img src="../img/EZ-remove.png" alt="logo-empresa" class="logo">
         <p> <strong>&copy;2022 </strong>Todos los derechos reservados. </p>
       </div>
+      
     </footer>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

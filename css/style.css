@@ -511,13 +511,14 @@ footer {
 .container-gral .video {
   display: block;
   margin: auto;
-  width: 90%;
+  width: 80%;
   margin-top: 20px;
 }
 
 .card-title .card-text {
   font-size: 1.5rem;
   font-weight: 800;
+  width: 100%;
 }
 
 .ez {
@@ -555,6 +556,7 @@ footer {
   height: 900px;
   width: 100%;
   padding-bottom: 10px;
+  border-radius: 1%;
 }
 
 .container-casas .do, .container-deco .do {
@@ -562,7 +564,7 @@ footer {
 }
 
 .container-deco .do {
-  margin: 10px;
+  margin: 8px;
   border-radius: 10px;
   -webkit-transition: -webkit-transform .5s linear;
   transition: -webkit-transform .5s linear;
@@ -624,7 +626,6 @@ footer {
 
 .casa6 {
   background-image: url(../img/EZ-remove.png);
-  background-color: rgba(209, 198, 198, 0.938);
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
@@ -697,7 +698,6 @@ footer {
 
 .deco3 {
   background-image: url(../img/EZ-remove.png);
-  background-color: rgba(209, 198, 198, 0.938);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1110,9 +1110,7 @@ footer {
 }
 
 .container-foto h2 {
-  text-align: justify;
-  width: 70%;
-  margin: auto;
+  width: 60%;
   margin-bottom: 2rem;
 }
 
@@ -1120,6 +1118,10 @@ footer {
   display: block;
   width: 60%;
   margin: auto;
+}
+
+.andes {
+  margin-left: 15%;
 }
 
 .card .bg-transparent {

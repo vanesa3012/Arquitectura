@@ -415,7 +415,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     .video{
         display: block;
         margin: auto;
-        width: 90%;
+        width: 80%;
         margin-top: 20px;
     }
 }
@@ -423,6 +423,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 .card-title .card-text{
     font-size: 1.5rem;
     font-weight: 800;
+    width: 100%;
 }
 
 .ez{
@@ -458,6 +459,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     height: 900px;
     width: 100%;
     padding-bottom: 10px;
+    border-radius: 1%;
     .do{
         margin: 10px;
     }
@@ -466,7 +468,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 .container-deco{
     @extend .container-casas;
     .do{
-        margin: 10px;
+        margin: 8px;
         border-radius: 10px;
         transition: transform .5s linear;
     }
@@ -511,7 +513,6 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 .casa6{
     @extend .casa1;
     background-image: url(../img/EZ-remove.png);
-    background-color: $colorDeco;
     grid-column: 4/5;
     grid-row: 2/4;
 }
@@ -562,8 +563,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 
 .deco3{
     @extend .casa1;
-    background-image: url(../img/EZ-remove.png);
-    background-color: $colorDeco;
+    background-image: url(../img/EZ-remove.png); 
     grid-column: 1/2;
     grid-row: 3/5;
 }
@@ -848,9 +848,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 
     }
     h2{
-        text-align:justify;
-        width: 70%;
-        margin: auto;
+        width: 60%;
         margin-bottom: 2rem;
     }    
 
@@ -861,6 +859,10 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
     }
 }
 
+.andes{
+    margin-left: 15%;
+}
+
 .card .bg-transparent{
     border: none;
 }
@@ -868,6 +870,7 @@ $lista: arquitecto, diseñador, decoradora, diseñadora, secretaria, director;
 .card-chica{
     font-size: 1rem;
 }
+
 
 
 

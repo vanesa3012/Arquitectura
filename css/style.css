@@ -41,7 +41,8 @@ nav ul li a {
 
 #navlogo {
   width: 30%;
-  margin-left: 10rem;
+  margin: auto;
+  /*margin-left: 12rem;*/
 }
 
 header {
@@ -321,10 +322,13 @@ footer {
 
 .contenedor-map h4,
 .contenedor-map h6,
-.contenedor-map ul,
-.contenedor-map p {
+.contenedor-map ul {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.contenedor-map iframe {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
